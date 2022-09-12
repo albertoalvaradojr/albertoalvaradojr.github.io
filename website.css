@@ -17,6 +17,7 @@ html{
 }
 #Topbar li a{
 	display: block;
+	font-size: 20px;
 	color: white;
 	text-align: center;
 	padding: 35px 20px;
@@ -28,6 +29,7 @@ li a:hover{
 }
 li a.active{
 	color: white;
+	
 	background-color: black;
 }
 p{
@@ -45,10 +47,10 @@ a{
 	text-decoration: none;
 }
 h1{
-	font-size:50pt;
+	font-size:20pt;
 	color:#3b464c;
 	text-align: center;
-	padding: 0 300px;
+	padding: 35px 360px;
 	margin: 0;
 	text-shadow: 1px 1px 1px black;
 }
