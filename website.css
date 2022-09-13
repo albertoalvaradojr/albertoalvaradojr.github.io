@@ -3,12 +3,6 @@ html{
 	text-align: center;
 	background-color: #0C0C0C;
 	font-family: 'Open Sans', sans-serif;
-	/*
-	background-image: url('Images/NinjaT.png');	
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-  */
 }
 
 #Topbar{
@@ -34,8 +28,7 @@ html{
 	background-color: gray;
 }
 #Topbar li a.active{
-	color: white;
-	
+	color: white;	
 	background-color: black;
 }
 
@@ -49,19 +42,19 @@ p{
 
 h1{
 	font-size:20pt;
-	color:#3b464c;
+	color:white;
 	text-align: center;
 	padding: 35px 360px;
 	margin: 0;
-	text-shadow: 1px 1px 1px black;
+	text-shadow: 1px 1px 1px grey;
 }
 h2{
 	font-size:40pt;
-	color:#3b464c;
+	color:white;
 	text-align: center;
 	padding: 100px 0;
 	margin: 0;
-	text-shadow: 1px 1px 1px black;
+	text-shadow: 15px 15px 15px black;
 }
 *{
 	box-sizing: border-box;
@@ -88,6 +81,10 @@ h2{
 }
 #myImages li a{
 	width="75%";
+	
+}
+#myImages li a:hover{
+	background-color: gray;
 }
 iframe, audio{
 	display: block;
