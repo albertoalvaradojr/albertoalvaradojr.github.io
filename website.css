@@ -32,6 +32,7 @@ html{
 	
 	background-color: black;
 }
+
 p{
 	padding: 50px 50px;
 	font-size: 15px;
@@ -73,9 +74,7 @@ h2{
 	padding:0;
 	overflow: hidden;
 }
-#myImages li{
-	float: center;
-}
+
 
 iframe, audio{
 	display: block;
@@ -85,6 +84,14 @@ iframe, audio{
 
 form{
 	color: white;
+	padding: 10px 10px;
+}
+
+input, textarea{
+	background-color: #1E1D1D;
+}
+input{
+	padding:5px 100px;
 }
 
 

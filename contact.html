@@ -21,16 +21,25 @@
 <h1> Contact me</h1>
 
 <p>Fill out the form below</p>
-<form>
-	<label>Enter Text</label>
-	<input type="text" name="name" id="name"/>
+<form method="post" action="scripts/emailform.php">
+	<label>Name<label>
 	<br>
-	<label>Enter Text</label>
-	<input type="address" name="address" id="email"/>
 	<br>
-	<label>Enter Text</label>
-	<input type="message-box" name="message-box" id="message"/>
+	<input type="text" placeholder="John Doe" name="name" id="name" required/>
 	<br>
-	<input type="submit" name="submit" id="submit"/>
+	<br>
+	<label>Email Address</label>
+	<br>
+	<br>
+	<input type="address" placeholder="email@address.com" name="address" id="email" required/>
+	<br>
+	<br>
+	<label>Message</label>
+	<br>
+	<br>
+	<input style="padding: 0 100px 105px;"  type="message-box" placeholder="Message" name="message-box" id="message" required/>
+	<br>
+	<br>
+	<input type="submit" style="padding: 5px;"name="submit" id="submit"/>
 </form>
 </html>
