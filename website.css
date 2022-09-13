@@ -3,6 +3,12 @@ html{
 	text-align: center;
 	background-color: #0C0C0C;
 	font-family: 'Open Sans', sans-serif;
+	/*
+	background-image: url('Images/NinjaT.png');	
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  */
 }
 
 #Topbar{
@@ -34,19 +40,13 @@ html{
 }
 
 p{
-	padding: 50px 50px;
+	padding: 100px 300px;
 	font-size: 15px;
 	color: white;
 	line-height: 2;
 	letter-spacing: 1px;
 }
-a{
-	display: block;
-	font-size: 25px;
-	text-align: left;
-	padding: 50px 50px;
-	text-decoration: none;
-}
+
 h1{
 	font-size:20pt;
 	color:#3b464c;
@@ -63,19 +63,32 @@ h2{
 	margin: 0;
 	text-shadow: 1px 1px 1px black;
 }
+*{
+	box-sizing: border-box;
+}
+
+.column{
+	float:left;
+	width: 33.33%;
+	padding:50px;
+}
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
 #myImages{
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
 }
 #myImages li a{
-	margin:0;
-	padding:0;
-	overflow: hidden;
+	width="75%";
 }
-
-
 iframe, audio{
 	display: block;
 	margin: 0 auto;
