@@ -78,6 +78,7 @@ h2{
 }
 #myImages{
 	list-style-type: none;
+	float: left;
 }
 #myImages li a{
 	width="75%";
