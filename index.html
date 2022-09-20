@@ -6,16 +6,19 @@
 </head>
 
 <body>
+<a name="top"></a>
 <! -- Top bar section -->
 <div id="header" class="section">
 <ul id="Topbar">
-<li><a href="index.html">Projects</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<h1 style="float:center"><strong>Alberto Alvarado Jr</strong></h1>
+<li><a href="#About">About</a></li>
+<li><a href="#Projects">Projects</a></li>
+<li><a href="#ContactMe">Contact</a></li>
+<h1><strong>Alberto Alvarado Jr</strong></h1>
 </ul>
 </div>
 <! -- Top bar end -->
+
+
 
 <! --
 <video width="320" height="240" autoplay muted>
@@ -31,11 +34,27 @@ src="https://www.youtube.com/embed/PpkcvUIzNjg" title="YouTube video player"
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 -->
+
+
+<! -- About Me section -->
+<div class="AboutMe">
+<a name="About"></a>
+<h2> About me</h2>
+<img src="Images/Me.jpg" class="roundimg" width="300" height="300" alt="Picture of me image">
+<p style="padding: 100px 300px;">
+Hello! I am <strong>Alberto Alvarado Jr</strong>, coding is my passion and games are my life.	
+ After,  discovering you can develop games with programming and Unity I quickly decided to start my journey. 
+ Please feel free to check out my work and play my games. If you know anyone who is hiring then
+ refer them to me as well. Enjoy!
+
+</p>
+</div>
+
 <! -- My work start -->
-<div class="section">
+<div class="work">
 <h2>My Work</h2>
 <div class="row">
-
+<a name="Projects">
 <! -- pictures -->
 <ul id="myImages"> 
 <div class="column">
@@ -60,10 +79,39 @@ allowfullscreen></iframe>
 <li><a href="https://aajrgs2020.itch.io/into-the-trench"><img src="Images/itt.png" alt="space image"></li>
 </div>
 </ul>
+</div>
+</div>
 <! -- picture end -->
 
-</div>
-</div>
+<! -- Contact info start -->
+<div>
+<h2> Contact me</h2>
+<a name="ContactMe"></a>
+
+<form action="https://formsubmit.co/aajrgs@gmail.com" method="POST" >
+	<label>Name<label>
+	<br>
+	<br>
+	<input type="text" placeholder="John Doe" name="name" id="name" required/>
+	<br>
+	<br>
+	<label>Email Address</label>
+	<br>
+	<br>
+	<input type="email" placeholder="email@address.com" name="email" id="email" required/>
+	<br>
+	<br>
+	<label>Message</label>
+	<br>
+	<br>
+	<input style="padding: 0 100px 105px;"  type="message-box" placeholder="Message" name="message-box" id="message" required/>
+	<br>
+	<br>
+	<input type="submit" style="padding: 5px;"name="submit" id="submit"/>
+</form>
+</div
+ 
+<a href="#top">Back to the top</a>
 <script src="scripts/main.js"></script>
 </body>
 </html>
