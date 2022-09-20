@@ -5,12 +5,18 @@ html{
 	font-family: 'Open Sans', sans-serif;
 }
 
+.roundimg{
+	border-radius: 50%;
+}
+
+
+
 #Topbar{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: black;
+	background-color: rgba(0,0,0,0.15);
 }
 #Topbar li{
 	float: left;
@@ -93,12 +99,11 @@ iframe, audio{
 }
 
 form{
-	color: white;
-	padding: 10px 10px;
+	padding: 1px 1px;
 }
 
 input, textarea{
-	background-color: #1E1D1D;
+	background-color: white;
 }
 input{
 	padding:5px 100px;
