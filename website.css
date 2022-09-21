@@ -1,18 +1,43 @@
 html{
 	font-size: 10px;
-	text-align: center;
+	text-align:center;
 	background-color: #0C0C0C;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .roundimg{
 	border-radius: 50%;
+	padding:25px;
 }
 
+body {
+  margin: 0;
+}
+
+#Topbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: rgba(0,0,0,0.15);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+#Topbar li a {
+  font-size: 15px;
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/*
 #Topbar{
 	list-style-type: none;
 	margin: 0;
-	padding: 1px;
+	padding: 1% 25% 1% 50%;
 	position: fixed;
 	background-color: rgba(0,0,0,0.15);
 }
@@ -27,7 +52,7 @@ html{
 	padding: 15px 15px;
 	text-decoration: none;
 	}
-
+*/
 #Topbar li a:hover{
 	background-color: gray;
 }
@@ -44,17 +69,15 @@ p{
 }
 
 h1{
-	font-size:20px;
+	font-size:25px;
 	color:white;
 	text-align: center;
-	padding: 0px 600px;
-	margin: 0;
 }
 h2{
 	font-size:40pt;
 	color:white;
 	text-align: center;
-	padding: 100px 0;
+	padding: 0px 25px;
 	margin: 0;
 	text-shadow: 15px 15px 15px black;
 }
@@ -64,7 +87,7 @@ h2{
 
 .column{
 	float:left;
-	width: 33.33%;
+	width: 48.33%;
 	padding:50px;
 }
 .row::after{
@@ -83,7 +106,7 @@ h2{
 	float: left;
 }
 #myImages li a{
-	width="75%";
+	width="100%";
 	
 }
 #myImages li a:hover{
@@ -97,6 +120,7 @@ iframe, audio{
 
 form{
 	padding: 1px 1px;
+	text-align: center;
 }
 
 input, textarea{
