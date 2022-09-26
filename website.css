@@ -2,8 +2,7 @@ html{
 	font-size: 10px;
 	text-align:center;
 	background-color: #0C0C0C;
-	font-family: 'Open Sans', sans-serif;
-	
+	font-family: 'Open Sans', sans-serif;	
 }
 
 img{
@@ -12,34 +11,34 @@ img{
 }
 
 body {
-  margin: 0px;
-
+	margin: 0px;
 }
 
+
 #Topbar {
-background-color: black;
- list-style-type: none;
-margin:0;
-padding: 0;
-position: fixed;
-left: 0;
-right: 0;
-top: 5px;
-height: 30px;
-display: flex;
-align-items: center;
-box-shadow: 0 0 25px 0 black;
+	background-color: black;
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 15px 0 grey;
 }
 
 #Topbar li{
-	margin: 20px;
+	margin: auto;
 }
 
 #Topbar li a {
    display: block;
+   font-size: 18px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 13px;
   text-decoration: none;
 }
 
@@ -52,6 +51,7 @@ box-shadow: 0 0 25px 0 black;
 }
 
 p{
+	
 	font-size: 15px;
 	color: white;
 	line-height: 2;
@@ -59,16 +59,18 @@ p{
 }
 
 h1{
-	font-size:25px;
+	font-size:75px;
 	color:white;
 	text-align: center;
+	text-shadow: 3px 3px 3px grey;
+
 }
 h2{
 	font-size:40pt;
 	color:white;
 	text-align: center;
 	padding: 0px 25px;
-		margin: 0;
+	margin: 0;
 	text-shadow: 15px 15px 15px black;
 }
 *{
@@ -77,13 +79,14 @@ h2{
 
 .column{
 	float:left;
-	width: 25.33%;
-	padding:20px;
+	width: 33.33%;
+	padding:50px;
 	}
 .row::after{
 	content: "";
 	clear: both;
 	display: table;
+
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
@@ -94,14 +97,10 @@ h2{
 #myImages{
 	list-style-type: none;
 	float: left;
-	width: 1000px;
-    margin: auto;
-   /* border: 3px solid #4287f5;*/
+	width: 100%;
 }
-
-#myImages li a{
-	width="100%";
-	
+#myImages li {
+	margin: auto;
 }
 #myImages img{
 	height:200px;
