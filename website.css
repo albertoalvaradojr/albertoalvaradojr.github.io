@@ -14,6 +14,7 @@ html{
   /* Will not allow the video to overflow the 
   container */
   overflow: hidden;
+	  object-fit: cover;
 
   /* Centering the container's content vertically 
   and horizontally */
@@ -25,12 +26,13 @@ html{
 video{
 	 /** Simulationg background-size: cover */
 	 
-	  object-fit: cover;
+	  object-fit: contain;
 	  height: 100%;
 	  width: 100%;	  
 	  margin: 43px;
 	  position: absolute;
 	  top: 0;
+	  
 }
 img{
 	border-radius: 50%;
