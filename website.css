@@ -128,8 +128,8 @@ h2{
 
 .column{
 	float:left;
-	width: 33.33%;
-	padding:50px;
+	width: 40.33%;
+	padding:200px;
 	}
 .row::after{
 	content: "";
@@ -145,11 +145,10 @@ h2{
 }
 #myImages{
 	list-style-type: none;
-	float: left;
 	width: 100%;
 }
 #myImages li {
-	/*margin: auto;*/
+	margin: auto;
 }
 #myImages img{
 	height:275px;
