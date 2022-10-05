@@ -15,7 +15,7 @@ html{
   container */
   overflow: hidden;
   object-fit: cover;
-	/*background-color:black;*/
+	background-color:black;
   /* Centering the container's content vertically 
   and horizontally */
   text-align: center;
@@ -44,13 +44,13 @@ body {
 }
 b{
 	color: #2c3e3a;
-	font-size: 30px;
+	font-size: 35px;
 	text-shadow: 1px 1px 1px grey;
 
 }
 i{
 	color: grey;
-	font-size: 23px;
+	font-size: 26px;
 	text-shadow: .5px .5px .5px #2c3e3a;
 
 }
@@ -114,7 +114,7 @@ h1{
 
 }
 h2{
-	font-size:40pt;
+	font-size:45pt;
 	color:white;
 	text-align: center;
 	padding: 10px 25px;
@@ -128,8 +128,7 @@ h2{
 
 .column{
 	float:left;
-	width: 40.33%;
-	padding:200px;
+	width:33.33%;
 	}
 .row::after{
 	content: "";
@@ -148,8 +147,9 @@ h2{
 	width: 100%;
 }
 #myImages li {
-	margin: auto;
-}
+	display: flex;
+  justify-content: center;
+  }
 #myImages img{
 	height:275px;
 	width: 300px;
@@ -179,4 +179,6 @@ h2{
 
 .Headings{
 }
-
+.aboutProject{
+	margin: 5px;
+}
