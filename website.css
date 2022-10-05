@@ -2,7 +2,7 @@ html{
 	font-size: 10px;
 	text-align:center;
 	background-color: #181818;
-	font-family: 'Open Sans', sans-serif;
+	font-family: roboto-condensed, sans-serif;
 	scroll-behavior: smooth;	
 }
 .introVid{
@@ -70,11 +70,11 @@ h3{
 	position: fixed;
 	left: 0;
 	right: 0;
-	height: 40px;
+	height: 60px;
 	display: flex;
 	align-items: center;
 	box-shadow: 0 0 15px 0 grey;
-	  z-index: 9;
+	z-index: 9;
 
 }
 
@@ -84,11 +84,12 @@ h3{
 
 #Topbar li a {
    display: block;
-   font-size: 18px;
-  color: white;
-  text-align: center;
-  padding: 10px 13px;
-  text-decoration: none;
+   font-size: 20px;
+   font-family: roboto-mono, monospace;
+	color: white;
+	text-align: center;
+	padding: 16px 13px;
+	text-decoration: none;
 }
 
 #Topbar li a:hover{
