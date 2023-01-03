@@ -202,3 +202,10 @@ h2{
 .BackToTop img:hover{
 	background-color: #1B2624;
 }
+
+#Games{
+	padding: 5px 400px;
+}
+#AboutP{
+	padding: 5px 350px;
+}
