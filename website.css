@@ -204,6 +204,10 @@ h2{
 }
 /* testing change*/
 #Games{
+   padding: 0px 25%;
 }
 #AboutP{
+   padding: 0px 25%;
+  text-align: center;
+  align-items: center;
 }
