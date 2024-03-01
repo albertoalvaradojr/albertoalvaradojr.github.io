@@ -8,7 +8,7 @@ html{
 
 .introVid{
  /* Telling our absolute positioned video to 
-  be relative to this element */
+  be relative to this element blah blah */
   position: relative;
   width: 100%;
   height: 950px;
