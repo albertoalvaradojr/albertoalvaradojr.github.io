@@ -2,247 +2,950 @@
 <html lang="en">
 
 <head>
-  <title>Projects</title>
-  <link rel="stylesheet" href="website.css">
-  <link rel="stylesheet" href="https://use.typekit.net/dbf7ysr.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alberto Alvarado Jr Portfolio</title>
+
+  <!--favicon-->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <! -- Top bar section -->
-    <a name="top"></a>
-    <div id="header" class="section">
-      <ul id="Topbar">
-        <li><a href="#About">About</a></li>
-        <li><a href="#PerProjects">Projects</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#ContactMe">Contact</a></li>
-        <li><a href="https://app.enhancv.com/share/e1861b09/?">Resume</a></li>
-      </ul>
-    </div>
-    <! -- Top bar end -->
-      <! -- Video Start -->
-        <div class="introVid">
-          <video playsinline autoplay muted loop>
-            <source src="Videos/TestVid.mov" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video>
+  <main>
+
+    <!--#SIDEBAR-->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Alberto Alvarado Jr" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Alberto Alvarado Jr">Alberto Alvarado Jr</h1>
+
+          <p class="title">Software Engineer</p>
         </div>
-        <! -- Video End -->
 
-          <! -- About Me section -->
-            <div style="padding:100px 16px; height:1000px;">
-              <p style="color:#2c3e3a; font-size: 35px; margin: 0;">Hello, my name is</p>
-              <h1><strong>Alberto Alvarado Jr</strong></h1>
-              <h3>Games. Code. Teaching.</h3>
-              <img src="Images/Me.jpg" class="roundimg" width="450" height="450" alt="Picture of me image">
-              <a name="About"></a>
-              <div class="AboutMe">
-                <h2> About me</h2>
-                <hr size="1" width="25%" color="grey">
-                <div id="AboutP">
-                  <p>
-                    Hello, I am a Game Developer using the Unity and Unreal Engine to create fun and thrilling games. My
-                    focus is
-                    on Gameplay Programming with experience in AI.
-                    I have certifications in C#, C++, Game Design, Unreal Engine and just have a big passion for
-                    programming.
-                    On the side, I like to help kids learn programming through game development.
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-                    Feel free to check out my work.
-                  </p>
-                </div>
-                <! -- Skills -->
-                  <ul class="Skills">
-                    <p style="font-size: 28px; color: grey;">Over the years i've honed my experience with the following:
-                    </p>
-                    <li>Languages:</li>
-                    <p>C#, C++, HTML, CSS</p>
-                    <li>Version Control Software:</li>
-                    <p>GitHub, Plastic SCM</p>
-                    <li>Project Management Tools:</li>
-                    <p>Trello</p>
-                    <li>Software:</li>
-                    <p>Visual Studios, GIMP, Audacity, Blender</p>
-                    <li>Engines:</li>
-                    <p>Unity , Unreal Engine</p>
-                    <li>Favorite Games:</li>
-                    <div id="Games">
-                      <p>The Last Of Us series, Jak and Daxter Trilogy, Clash of Clans, Jetpack Joyride, Uncharted
-                        series, Call of Duty series, Dragon ball z games, Mortal Kombat, HellBlade: Senua's Sacrifice,
-                        Titanfall 2, Hollow Knight </p>
-                    </div>
-                  </ul>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:alalvjr@yahoo.com" class="contact-link">alalvjr@yahoo.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+19562924031" class="contact-link">(956) 292-4031</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Edinburg, Texas, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--#main-content-->
+
+    <div class="main-content">
+
+      <!--#NAVBAR-->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--#ABOUT-->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a Gameplay Programmer with extensive experience in creating games using Unity and Unreal Engine. 
+            
+            My passion lies in developing games and features that I enjoyed playing as a kid. 
+            
+            Despite the challenges that come with programming, I find it to be a relaxing experience. 
+            
+            I take pleasure in learning new technologies and tackling complex problems.
+            <br>
+            <br>
+            Over the years I've honed my experience with the following:
+            
+            <br>
+            Languages:
+            <br>
+            C#, C++
+            <br>
+            Version Control Software:
+            <br>
+            GitHub, Plastic SCM
+            
+            <br>
+            Project Management Tools:
+            <br>
+            Trello, YouTrack
+            <br>
+            Software:
+            <br>
+            Visual Studios, GIMP, Audacity, Blender
+            <br>
+            Engines:
+            <br>
+            Unity, Unreal Engine, Godot
+          </p>
+
+          <p>
+           </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
               </div>
 
-              <! -- My work start -->
-                <a name="PerProjects">
-                  <div class="work">
-                    <h2>Projects</h2>
-                    <hr size="1" width="25%" color="#2c3e3a">
-                    <p>Click on the pictures to learn more about them.</p>
-                    <div class="row">
-                      <! -- pictures -->
-                        <ul id="myImages">
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/alone"><img src="Images/NoZombiesTN.png"
-                                  alt="Alone image"></a></li>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Development</h4>
 
-                            <p><b>Alone </b></p>
-                            <p>A FPS Horror Game</p>
-                          </div>
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+       
+      </article>
+
+      <!--#RESUME-->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+      
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Gameplay Engineer</h4>
+
+              <span>04/2024 — Present</span>
+
+              <p class="timeline-text">
+                Enhanced the user experience and interface in Unity by integrating intuitive UI/UX features. 
+                Implemented player skills, abilities, and animations to ensure smooth and visually appealing gameplay.
+                Managed server-client communication for updates and created tools that boosted the team's testing and debugging efficiency.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Unreal Engine Programmer</h4>
+
+              <span>11/2023 — 03/2024</span>
+
+              <p class="timeline-text">
+                Developed and optimized network programming features in Unreal Engine to enhance multiplayer functionality and performance.
+                 Maintained effective communication with the team, boosting collaboration and teamwork. 
+                 Designed and implemented new gameplay mechanics, leading to greater player engagement and an improved overall game experience.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Unity Developer Intern</h4>
+
+              <span>06/2023 — 10/2023</span>
+
+              <p class="timeline-text">
+                Used Spatial as the main platform for development, emphasizing performance optimization. 
+                Employed Unity's Visual Scripting to program mechanics, animations, and interactive elements, aiding the success of three game projects. 
+                Enhanced 3D models, materials, and textures to improve project efficiency across AR, VR, and WebGL platforms.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Developer</h4>
+
+              <span>12/2022 — 01/2023</span>
+
+              <p class="timeline-text">
+                Programmed and designed a quiz feature inside WordPress using HTML, CSS, and JavaScript that outputs different results based on the answers provided by the user.
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Unity Developer</h4>
+
+              <span>05/2022 — 05/2023</span>
+
+              <p class="timeline-text">
+                Led the creation of advanced AI mechanics, gameplay features, and prototypes. 
+                Improved player interactions by integrating a collision detection system for smoother gameplay. 
+                Worked with the level design team to craft engaging game levels and refine AI navigation.
+              </p>
+
+            </li>
 
 
-                          <div class="column">
-                            <li><a
-                                href="https://assetstore.unity.com/packages/tools/behavior-ai/moodme-4-emotions-bad-moments-premium-free-ai-game-included-227836"><img
-                                  src="Images/MoodMe.png" alt="MoodMe image"></a></li>
-                            <p><b>Emotion Game</b></p>
-                            <p>Emotion Demo</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://play.google.com/store/apps/dev?id=9122318317448788329"><img
-                                  src="Images/LostInSpace.png" alt="lost in space image"></a></li>
-                            <p><b>Lost In Space</b></p>
-                            <p>Mobile Game</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/hot-tracks-cars"><img src="Images/HotTracks.png"
-                                  alt="hot tracks image"></a></li>
-                            <p><b>Hot Tracks</b></p>
-                            <p>Racing Game</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/trials"><img src="Images/TrialsT.png"
-                                  alt="trials image"></a></li>
-                            <p><b>Trials</b></p>
-                            <p>First-Person Horror</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/rise"><img src="Images/RiseT.png"
-                                  alt="rise image"></a></li>
-                            <p><b>Rise</b></p>
-                            <p>First-Person Horror</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://moonrift.itch.io/soul-guard"><img src="Images/SG.webp"
-                                  alt="SoulGuard image"></a></li>
-                            <p><b> Soul Guard</b></p>
-                            <p>3rd-person Open World Game</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://moonriftentertainment.com/soulguardofficial/"><img
-                                  src="Images/wolf.webp" alt="SoulGuard image"></a></li>
-                            <p><b> Souls of The Hexed Moon</b></p>
-                            <p>2D-Platformer</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/ninja-escape"><img src="Images/NinjaT.png"
-                                  alt="ninja image"></a></li>
-                            <p><b>Ninja Escape</b></p>
-                            <p>2D-Platformer</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/last-defense"><img src="Images/LD.png"
-                                  alt="space image"><a /></li>
-                            <p><b>Last Defense</b></p>
-                            <p>2D Space Shooter</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/dance-night"><img src="Images/Dn.png"
-                                  alt="space image"></a></li>
-                            <p><b>Dance Night</b></p>
-                            <p>2D Rythm Game</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/gone-for-good"><img src="Images/Gone.png"
-                                  alt="space image"></a></li>
-                            <p><b>Gone For Good</b></p>
-                            <p>First-Person Horror</p>
-                          </div>
-                          <div class="column">
-                            <li><a href="https://aajrgs2020.itch.io/into-the-trench"><img src="Images/itt.png"
-                                  alt="space image"></a></li>
-                            <p><b>Into The Trench</b></p>
-                            <p>2D Top down Survival</p>
-                          </div>
-                        </ul>
-                    </div>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+
+              <span>08/2021 — 11/2021</span>
+
+              <p class="timeline-text">
+                Led the creation of a Unity and C# demo to showcase the company's emotion detection AI.
+                 Collected team feedback and made adjustments to ensure high quality. 
+                Developed prototypes for presentations to creative, technical staff, and management.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Gameplayer Programmer Intern</h4>
+
+              <span>08/2019 — 08/2021</span>
+
+              <p class="timeline-text">
+                Took charge of key gameplay elements to ensure a smooth gaming experience. 
+                Engineered prototypes from design ideas, streamlining the development process.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unity</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unreal Engine</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Game Development</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--#PORTFOLIO-->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Games</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Games</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <! -- picture end -->
 
-                    <! -- Experience start -->
-                      <a name="Experience"></a>
-                      <div class="experience">
-                        <h2>Where I've worked</h2>
-                        <hr size="1" width="25%" color="#686868">
-                        <p>
-                        <pre>
-<b>Unity Developer</b>
-<i>Collimation</i>
-June 2023 - Present
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
 
-                            
-<b>Unity Game Development Tutor</b>
-<i>CodeWiz</i>
-May 2022 - May-2023
+                <h3 class="project-title">Finance</h3>
 
-                            
+                <p class="project-category">Web development</p>
 
-<b>Programming Instructor</b>
-<i>eScout Academy</i>
-Apr 2022 - Jul 2022
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Game Development design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Game Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Game Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
-<b>Software Engineer Intern</b>
-<i>MoodMe</i>
-Aug 2021 - Nov 2021
+      <!--#BLOG-->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
-<b>Gameplay Programmer</b>
-<i>MoonRift Entertainment, LLC</i>
-Feb 2020 - Oct 2021
+      <!--#CONTACT-->
 
-<b>Game Developer Intern</b>
-<i>MoonRift Entertainment, LLC</i>
-Aud 2019 - Feb 2020
+      <article class="contact" data-page="contact">
 
-</pre>
-                        </p>
-                      </div>
-                      <! -- Experience end -->
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
 
+        <section class="contact-form">
 
-                        <! -- Contact info start -->
-                          <a name="ContactMe"></a>
-                          <div class="contact">
-                            <h2> Contact me</h2>
-                            <hr size="1" width="25%" color="#686868">
-                            <p>Feel free to send me a message: <a href="mailto: alalvjr@yahoo.com" class="email"
-                                style="color: grey; font-size: 25px;">alalvjr@yahoo.com</a>.<br>
-                              I am looking for opportunities, so if you are looking for Game/Unity
-                              Developers, you can email me.<br>
-                            </p>
-                            <br>
-                            <a href="https://github.com/albertoalvaradojr"><img src="Images/github.png" width="100"
-                                height="100" style="border-radius: 0%;" alt="github img" </a>
-                              <a href="https://www.instagram.com/aajrgse/"><img src="Images/instagram.png" width="100"
-                                  height="100" style="border-radius: 0%;" alt="github img" </a>
-                                <a href="https://www.linkedin.com/in/alberto-alvarado-jr"><img src="Images/linkedin.png"
-                                    width="100" height="100" style="border-radius: 0%;" alt="github img" </a></a>
-                          </div <div>
-                          <p style="font-size: 13px;">Designed and Built by Alberto Alvarado Jr</p>
-                          <a href="#top" class="BackToTop"><img src="Images/next.png" width="50" height="50"
-                              style="margin: 10px; padding: 5px;" alt="Back to top img" </a></a>
-                          <p style="font-size: 15px; margin: 0;">Back to top</p>
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <div class="loader-wrapper">
-              <span class="loader">
-                <span class="loader-inner"></span>
-              </span>
-            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
