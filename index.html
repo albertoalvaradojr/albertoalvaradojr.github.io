@@ -629,18 +629,127 @@
         <figure>
          
         </figure>
-        <video autoPlay loop muted>
-          <source src="assets\video\DirectionalUI.mp4"  type="video/mp4">  
-          <source src="assets\video\DirectionalUI.ogg"  type="video/ogg">  
+        <video class="project-img" autoPlay loop muted>
+          <source src="assets\video\ScensionVideos\DirectionalUI.mp4"  type="video/mp4">  
           Your browser does not support the video tag.
         </video>
+
+        <!--About-->
         <section class="about-text">
           <p>
-           About Scension.....
-          
+            Scension is a multiplayer game where five teams of five compete head-to-head to reach the boss arena and defeat it before any other team. 
+            <br>
+            <br>
+            The game was developed using Unreal Engine 5 and the Lyra Plugin.
+            <br>
+            <br>
+            In this project, I was responsible for implementing UI elements and core gameplay mechanics. Some examples of my work include the minimap, team display (left side), player stats (top right corner), arena status (next to the minimap), gold inventory, neutral rewards, security system, abilities, combat meter, and more.
+            <br>
+            <br>
+            Unfortunately, Scension did not get a public release, as the company went under and the team was disbanded.  
+            <br>
+            <br>
+            Despite this, I am proud of the features I developed. Please take a moment to check out my work—I had a great time bringing these elements to life! 
           </p>
-        </section>      
+        </section>
+
+        <!--Directional UI and Map-->
+        <section class="about-text">
+          <h3 class="h3 article-title">Directional UI and Map</h3>
+          <video class="project-img" autoPlay loop muted>
+            <source src="assets\video\ScensionVideos\DirectionalUI.mp4"  type="video/mp4">  
+            Your browser does not support the video tag.
+          </video>
+          <br>
+          <p>
+            Designed and implemented a directional UI element to guide players toward objectives.
+            Customized a MiniMap plugin to align with project-specific needs, adding unique features. Additionally, developed full-map logic to enhance navigation and gameplay.
+          </p>
+        </section>
+        
+        <!--Combat Meter-->
+        <section class="about-text">
+          <h3 class="h3 article-title">Combat Meter</h3>
+          <video class="project-img" autoPlay loop muted>
+            <source src="assets\video\ScensionVideos\CombatMeter.mp4"  type="video/mp4">  
+            Your browser does not support the video tag.
+          </video>
+          <br>
+          <p>
+            Developed a combat meter to indicate when the player is free from combat. 
+            Upon taking damage, the progress meter resets to zero and gradually fills until reaching a 'no combat' state. Additionally, integrated a synchronized health number within the combat meter's circular design, providing players with precise health information aligned with the health bar for clarity and consistency.
+          </p>
+        </section>
+
+         <!--Security System-->
+         <section class="about-text">
+          <h3 class="h3 article-title">Security System</h3>
+          <video class="project-img" autoPlay loop muted>
+            <source src="assets\video\ScensionVideos\SecuritySystem.mp4"  type="video/mp4">  
+            Your browser does not support the video tag.
+          </video>
+          <br>
+          <p>
+            Implemented a security system that players can construct to alert their team when an enemy enters their controlled arena.<br>
+            Additionaly, I added real-time UI indicators that immediately notify players the moment an enemy crosses the security gates, ensuring quick responses and enhanced strategic awareness.</p>
+        </section>
+
+        <!--Blessed Status/Teleporter Logic-->
+        <section class="about-text">
+          <h3 class="h3 article-title">Blessed Status/Teleporter Logic</h3>
+          <video class="project-img" autoPlay loop muted>
+            <source src="assets\video\ScensionVideos\BlessedandTeleporter.mp4"  type="video/mp4">  
+            Your browser does not support the video tag.
+          </video>
+          <br>
+          <p>
+            Developed the 'Blessed' status, granting players access to the Boss arena while automatically teleporting their team inside. 
+            While Blessed, players cannot use abilities, and the status is removed upon death or being downed. Players acquire the status by taking the Teleporter at the end of the map to the Floating Island (costing 10,000 gold) and drinking from the fountain. 
+            I also integrated the status into the UI, displaying the number of Blessed players, and implemented VFX created by the team’s artist to enhance visual feedback.
+          </p>
+        </section>
+
+         <!--Dragon Call-->
+         <section class="about-text">
+          <h3 class="h3 article-title">Dragon Call</h3>
+          <!-- <video class="project-img" autoPlay loop muted>
+            <source src="assets\video\ScensionVideos\BlessedandTeleporter.mp4"  type="video/mp4">  
+            Your browser does not support the video tag.
+          </video> -->
+
+          <figure class="project-img">
+            <img src="assets\images\ScensionImages\DragonCall.png" alt="Dragoncall" loading="lazy">
+            <img src="assets\images\ScensionImages\DragonHurt.png" alt="Dragoncall" loading="lazy">
+          </figure>         
+         <br>
+          <p>
+            Implemented a dynamic Dragon Call system that initiates a 2-minute countdown when activated. 
+            Teams can only access Dragon Call timers and dragon pit statuses for arenas under their control. 
+            However, when within the circular minimap radius of enemy dragon pits, dragon-pit information becomes visible to all allies, but only while remaining inside the radius. 
+            After the 2-minute timer elapses, a random dragon from multiple types spawns in the pit and remains until slain by a team. 
+            Activating the Dragon Call requires 10,000 gold, and defeating the dragon rewards the entire team with a powerful buff.
+           </p>
+        </section>
+
+         <!--Neutral Rewards Logic-->
+         <section class="about-text">
+          <h3 class="h3 article-title">Neutral Rewards Logic</h3>
+          <video class="project-img" autoPlay loop muted>
+            <source src="assets\video\ScensionVideos\Neutral Rewards.mp4"  type="video/mp4">  
+            Your browser does not support the video tag.
+          </video>
+          <br>
+          <p>
+            Developed the logic and implementation for Neutral Reward Timers, spawning mechanics, and UI integration. 
+            Neutral rewards are released in four rotating sections throughout the match. Starting 90 seconds into the game, reward zones labeled #1 activate, spawning a treasure chest at marked locations. 
+            These neutral rewards can be collected by any player, granting their entire team a significant gold bonus. 
+            The system ensures continuous engagement and strategic opportunities for all players.
+          </p>
+        </section>
+
       </article>
+
+      
      
     </div>
 
