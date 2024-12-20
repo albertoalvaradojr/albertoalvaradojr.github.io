@@ -1891,3 +1891,23 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.links a { 
+  text-decoration: none; 
+  color: lightblue;
+}
+
+.links a:hover {
+  color: green;
+}
+
+.links a:active {
+  color: grey;
+}
