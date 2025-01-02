@@ -457,8 +457,12 @@ main {
 
 .social-item .social-link:hover { color: var(--light-gray); }
 
-
-
+.social-link img{
+  opacity: 0.5;
+}
+.social-link img:hover{
+  opacity: 0.75;
+}
 
 
 /*-----------------------------------*\
@@ -1899,15 +1903,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   gap: 15px;
 }
 
-.links a { 
+.links{ 
   text-decoration: none; 
   color: lightblue;
 }
 
-.links a:hover {
-  color: green;
+.links:hover {
+  color: blue;
 }
 
-.links a:active {
-  color: grey;
+.links:active {
+  color: white;
+}
+
+.insta-block {
+  width: 100%;
+  margin: 0 auto;
 }
