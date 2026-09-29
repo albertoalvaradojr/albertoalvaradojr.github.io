@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "editor-browser",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\alalv\\Desktop\\WebStuff\\albertoalvaradojr.github.io\\index.html"
+            "url": "file:///c%3A/Users/alalv/Desktop/albertoalvaradojr.github.io/index.html"
         }
     ]
 }
