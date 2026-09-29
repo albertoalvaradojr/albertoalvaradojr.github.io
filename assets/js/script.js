@@ -108,6 +108,7 @@ for (let i = 0; i < projectBtns.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const formStatus = document.querySelector("[data-form-status]");
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
@@ -122,6 +123,29 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
+
+// Open the visitor's mail app with the form content pre-filled.
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  const formData = new FormData(form);
+  const fullName = formData.get("fullname");
+  const email = formData.get("email");
+  const message = formData.get("message");
+  const subject = encodeURIComponent(`Portfolio contact from ${fullName}`);
+  const body = encodeURIComponent(
+    `Name: ${fullName}\nEmail: ${email}\n\n${message}`
+  );
+
+  window.location.href = `mailto:aajrgs@gmail.com?subject=${subject}&body=${body}`;
+  formStatus.textContent = "Your email app should open with this message ready to send.";
+  formStatus.classList.add("active");
+});
 
 
 
