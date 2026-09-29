@@ -149,3 +149,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+
+// Only autoplay muted videos while they are visible in the viewport.
+// Videos with controls can still be started manually, but pause when scrolled away.
+const videos = document.querySelectorAll("video");
+
+const videoObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const video = entry.target;
+
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.25) {
+      if (video.dataset.autoplayVisible === "true") {
+        video.play().catch(() => {
+          // Browsers may reject autoplay when a video is not muted.
+        });
+      }
+    } else {
+      video.pause();
+    }
+  });
+}, {
+  threshold: [0, 0.25]
+});
+
+videos.forEach((video) => {
+  const shouldAutoplay = video.hasAttribute("autoplay") && video.muted;
+
+  video.dataset.autoplayVisible = shouldAutoplay ? "true" : "false";
+  video.removeAttribute("autoplay");
+  videoObserver.observe(video);
+});
