@@ -1,0 +1,1127 @@
+import{r as g,j as a}from"./index-GqRyVAnE.js";/* empty css               */const d=`<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alberto Alvarado Jr Portfolio</title>
+
+    <!--favicon-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/CompanyIcon.ico"
+      type="image/x-icon"
+    />
+
+    <!--custom css link-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!--#SIDEBAR-->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="assets\\images\\Me.jpg"
+              alt="Alberto Alvarado Jr"
+              width="80"
+              height="150"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Alberto Alvarado Jr">
+              Alberto Alvarado Jr
+            </h1>
+
+            <p class="title">Software Developer | Web Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:aajrgs@gmail.com" class="contact-link"
+                  >aajrgs@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+19562924031" class="contact-link"
+                  >(956) 292-4031</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Edinburg, Texas, USA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/alberto-alvarado-jr/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/albertoalvaradojr"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://aajrgs2020.itch.io/" class="social-link">
+                <img
+                  src="assets\\images\\itchio-logo-textless-white.png"
+                  alt="itch.io"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--#main-content-->
+      <div class="main-content">
+        <!--#NAVBAR-->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--#ABOUT-->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <!-- <video id="project-img" playsinline  autoPlay loop muted>
+          <source src="assets\\video\\DemoVideo.mp4"  type="video/mp4">  
+          Your browser does not support the video tag.
+        </video> -->
+
+          <section class="about-text">
+            <p>
+              I'm a software developer expanding my focus into web development,
+              with hands-on experience building interactive website features
+              using HTML, CSS, JavaScript, and WordPress. I have also practiced
+              React fundamentals, including components, props, and state. My
+              professional background in game development has strengthened my
+              programming, debugging, UI development, and problem-solving
+              skills. I enjoy learning new technologies and building
+              interactive, user-focused applications. I'm currently focused on
+              growing my skills in front-end and web application development and
+              looking for opportunities to contribute to a collaborative
+              development team.
+              <br />
+              <br />
+            </p>
+
+            <p></p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg?v=green-palette"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Game Development</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg?v=green-palette"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="about-text">
+            <h3 class="h3 skills-title">My skills</h3>
+            <p>
+              <b>Languages:</b>
+              <br />
+              HTML5, CSS3, JavaScript, C#, C++, and Python.
+              <br />
+              <br />
+              <b>Version Control Software:</b>
+              <br />
+              Git, GitHub, Preforce, and Plastic SCM
+              <br />
+              <br />
+              <b>Project Management Tools:</b>
+              <br />
+              Trello and YouTrack
+              <br />
+              <br />
+              <b>Software:</b>
+              <br />
+              Visual Studios, Visual Studio Code, WordPress and React.
+              <br />
+              <br />
+              <b>Engines:</b>
+              <br />
+              Unity, Unreal Engine, Godot, and Roblox Studio
+            </p>
+            <!--
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unity</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unreal Engine</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Game Development</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+-->
+          </section>
+        </article>
+
+        <!--#PORTFOLIO-->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <!--CategoryBtns-->
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Game Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Game Development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+              </ul>
+            </div>
+
+            <!--PROJECT LIST-->
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="game development"
+              >
+                <button data-project-btn>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/ScensionImages/Scension.png"
+                      alt="Scension"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Scension</h3>
+                </button>
+                <p class="project-category">Game Development</p>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="game development"
+              >
+                <button data-project-btn>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/AloneImages/Alone.png"
+                      alt="alone"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Alone</h3>
+                </button>
+
+                <p class="project-category">Game Development</p>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="game development"
+              >
+                <button data-project-btn>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/LionTree.png"
+                      alt="LionTree"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">LionTree</h3>
+                </button>
+                <p class="project-category">Game Development</p>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="game development"
+              >
+                <button data-project-btn>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/SOHM Img.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">SOHM</h3>
+                </button>
+                <p class="project-category">Game Development</p>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <button data-project-btn>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/PECA.png"
+                      alt="Quiz"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">PECA</h3>
+                </button>
+                <p class="project-category">Web Development</p>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="game development"
+              >
+                <button data-project-btn>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/MoodMePic.png"
+                      alt="Quiz"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">MoodMe</h3>
+                </button>
+                <p class="project-category">Game Development</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--#RESUME-->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Gameplay Programmer</h4>
+
+                <span><pre>04/2024 — 07/2024</pre></span>
+
+                <p class="timeline-text">
+                  Enhanced the user experience and interface in Unity by
+                  integrating intuitive UI/UX features. Implemented player
+                  skills, abilities, and animations to ensure smooth and
+                  visually appealing gameplay. Managed server-client
+                  communication for updates and created tools that boosted the
+                  team's testing and debugging efficiency.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Gameplay Engineer</h4>
+
+                <span><pre>11/2023 — 03/2024</pre></span>
+
+                <p class="timeline-text">
+                  Developed and optimized network programming features in Unreal
+                  Engine to enhance multiplayer functionality and performance.
+                  Maintained effective communication with the team, boosting
+                  collaboration and teamwork. Designed and implemented new
+                  gameplay mechanics, leading to greater player engagement and
+                  an improved overall game experience.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Technical Game Design Intern
+                </h4>
+
+                <span><pre>06/2023 — 10/2023</pre></span>
+
+                <p class="timeline-text">
+                  Used Spatial as the main platform for development, emphasizing
+                  performance optimization. Employed Unity's Visual Scripting to
+                  program mechanics, animations, and interactive elements,
+                  aiding the success of three game projects. Enhanced 3D models,
+                  materials, and textures to improve project efficiency across
+                  AR, VR, and WebGL platforms.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer</h4>
+
+                <span><pre>12/2022 — 01/2023</pre></span>
+
+                <p class="timeline-text">
+                  Programmed and designed a quiz feature inside WordPress using
+                  HTML, CSS, and JavaScript that outputs different results based
+                  on the answers provided by the user.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">AI Programmer</h4>
+
+                <span><pre>05/2022 — 05/2023</pre></span>
+
+                <p class="timeline-text">
+                  Led the creation of advanced AI mechanics, gameplay features,
+                  and prototypes. Improved player interactions by integrating a
+                  collision detection system for smoother gameplay. Worked with
+                  the level design team to craft engaging game levels and refine
+                  AI navigation.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+
+                <span><pre>08/2021 — 11/2021</pre></span>
+
+                <p class="timeline-text">
+                  Led the creation of a Unity and C# demo to showcase the
+                  company's emotion detection AI. Collected team feedback and
+                  made adjustments to ensure high quality. Developed prototypes
+                  for presentations to creative, technical staff, and
+                  management.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Gameplayer Programmer Intern
+                </h4>
+
+                <span><pre>08/2019 — 08/2021</pre></span>
+
+                <p class="timeline-text">
+                  Took charge of key gameplay elements to ensure a smooth gaming
+                  experience. Engineered prototypes from design ideas,
+                  streamlining the development process.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--#CONTACT-->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="mailto:aajrgs@gmail.com" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+
+              <p class="form-status" data-form-status aria-live="polite"></p>
+            </form>
+          </section>
+        </article>
+
+        <!--#ScensionPage-->
+        <article class="scension" data-page="scension">
+          <header>
+            <h2 class="h2 article-title">Scension</h2>
+          </header>
+          <!--
+        <video class="project-img" playsinline  autoPlay loop muted>
+          <source src="assets\\video\\ScensionVideos\\DirectionalUI.mp4"  type="video/mp4">  
+          Your browser does not support the video tag.
+        </video>
+-->
+          <!--About-->
+          <section class="about-text">
+            <p>
+              Scension is a multiplayer game where five teams of five compete
+              head-to-head to reach the boss arena and defeat it before any
+              other team.
+              <br />
+              <br />
+              The game was developed using Unreal Engine 5 and the Lyra Plugin.
+              <br />
+              <br />
+              In this project, I was responsible for implementing UI elements
+              and core gameplay mechanics. Some examples of my work include the
+              minimap, team display (left side), player stats (top right
+              corner), arena status (next to the minimap), gold inventory,
+              neutral rewards, security system, abilities, combat meter, and
+              more.
+              <br />
+              <br />
+              Unfortunately, Scension did not get a public release, as the
+              company went under and the team was disbanded.
+              <br />
+              <br />
+              Despite this, I am proud of the features I developed. Please take
+              a moment to check out my work—I had a great time bringing these
+              elements to life!
+            </p>
+          </section>
+
+          <!--Directional UI and Map-->
+          <section class="about-text">
+            <h3 class="h3 article-title">Directional UI and Map</h3>
+            <video class="project-img" playsinline autoplay loop muted>
+              <source
+                src="assets\\video\\ScensionVideos\\DirectionalUI.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p>
+              Designed and implemented a directional UI element to guide players
+              toward objectives. Customized a MiniMap plugin to align with
+              project-specific needs, adding unique features. Additionally,
+              developed full-map logic to enhance navigation and gameplay.
+            </p>
+          </section>
+
+          <!--Combat Meter-->
+          <section class="about-text">
+            <h3 class="h3 article-title">Combat Meter</h3>
+            <video class="project-img" playsinline autoplay loop muted>
+              <source
+                src="assets\\video\\ScensionVideos\\CombatMeter.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p>
+              Developed a combat meter to indicate when the player is free from
+              combat. Upon taking damage, the progress meter resets to zero and
+              gradually fills until reaching a 'no combat' state. Additionally,
+              integrated a synchronized health number within the combat meter's
+              circular design, providing players with precise health information
+              aligned with the health bar for clarity and consistency.
+            </p>
+          </section>
+
+          <!--Security System-->
+          <section class="about-text">
+            <h3 class="h3 article-title">Security System</h3>
+            <video class="project-img" playsinline autoplay loop muted>
+              <source
+                src="assets\\video\\ScensionVideos\\SecuritySystem.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p>
+              Implemented a security system that players can construct to alert
+              their team when an enemy enters their controlled arena.<br />
+              Additionaly, I added real-time UI indicators that immediately
+              notify players the moment an enemy crosses the security gates,
+              ensuring quick responses and enhanced strategic awareness.
+            </p>
+          </section>
+
+          <!--Blessed Status/Teleporter Logic-->
+          <section class="about-text">
+            <h3 class="h3 article-title">Blessed Status/Teleporter Logic</h3>
+            <video class="project-img" playsinline autoplay loop muted>
+              <source
+                src="assets\\video\\ScensionVideos\\BlessedandTeleporter.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p>
+              Developed the 'Blessed' status, granting players access to the
+              Boss arena while automatically teleporting their team inside.
+              While Blessed, players cannot use abilities, and the status is
+              removed upon death or being downed. Players acquire the status by
+              taking the Teleporter at the end of the map to the Floating Island
+              (costing 10,000 gold) and drinking from the fountain. I also
+              integrated the status into the UI, displaying the number of
+              Blessed players, and implemented VFX created by the team’s artist
+              to enhance visual feedback.
+            </p>
+          </section>
+
+          <!--Dragon Call-->
+          <section class="about-text">
+            <h3 class="h3 article-title">Dragon Call</h3>
+            <!-- <video class="project-img" autoPlay loop muted>
+            <source src="assets\\video\\ScensionVideos\\BlessedandTeleporter.mp4"  type="video/mp4">  
+            Your browser does not support the video tag.
+          </video> -->
+
+            <figure class="project-img">
+              <img
+                src="assets\\images\\ScensionImages\\DragonCall.png"
+                alt="Dragoncall"
+                loading="lazy"
+              />
+              <img
+                src="assets\\images\\ScensionImages\\DragonHurt.png"
+                alt="Dragoncall"
+                loading="lazy"
+              />
+            </figure>
+            <br />
+            <p>
+              Implemented a dynamic Dragon Call system that initiates a 2-minute
+              countdown when activated. Teams can only access Dragon Call timers
+              and dragon pit statuses for arenas under their control. However,
+              when within the circular minimap radius of enemy dragon pits,
+              dragon-pit information becomes visible to all allies, but only
+              while remaining inside the radius. After the 2-minute timer
+              elapses, a random dragon from multiple types spawns in the pit and
+              remains until slain by a team. Activating the Dragon Call requires
+              10,000 gold, and defeating the dragon rewards the entire team with
+              a powerful buff.
+            </p>
+          </section>
+
+          <!--Neutral Rewards Logic-->
+          <section class="about-text">
+            <h3 class="h3 article-title">Neutral Rewards Logic</h3>
+            <video class="project-img" playsinline autoplay loop muted>
+              <source
+                src="assets\\video\\ScensionVideos\\Neutral Rewards.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <br />
+            <p>
+              Developed the logic and implementation for Neutral Reward Timers,
+              spawning mechanics, and UI integration. Neutral rewards are
+              released in four rotating sections throughout the match. Starting
+              90 seconds into the game, reward zones labeled #1 activate,
+              spawning a treasure chest at marked locations. These neutral
+              rewards can be collected by any player, granting their entire team
+              a significant gold bonus. The system ensures continuous engagement
+              and strategic opportunities for all players.
+            </p>
+          </section>
+        </article>
+
+        <!--#AlonePage-->
+        <article class="alone" data-page="alone">
+          <header>
+            <h2 class="h2 article-title">Alone</h2>
+          </header>
+
+          <figure class="project-img">
+            <img
+              src="assets\\images\\AloneImages\\Alone.png"
+              alt="Alone"
+              loading="lazy"
+            />
+          </figure>
+
+          <!-- <video class="project-img" autoPlay loop muted>
+          <source src="assets\\video\\ScensionVideos\\DirectionalUI.mp4"  type="video/mp4">  
+          Your browser does not support the video tag.
+        </video> -->
+
+          <!--About-->
+          <section class="about-text">
+            <p>
+              After falling down a cave, you must explore and fight your way
+              out. Be careful of the dangers that lurk in the dark.
+              <br />
+              <br />
+              The game is a Work In Progress and will constantly be updated with
+              new features and mechanics. I am using Blueprints to develop the
+              mechanics and will start adding tools to the project along the
+              way.
+            </p>
+          </section>
+
+          <video class="project-img" playsinline autoplay loop muted>
+            <source
+              src="assets\\video\\AloneVideos\\DemoVideo.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <!--Updates-->
+          <section class="about-text">
+            <h3 class="h3 article-title">Updates</h3>
+            <!-- <video class="project-img" autoPlay loop muted>
+            <source src="assets\\video\\AloneVideos\\Grenade.gif"  type="video/gif">  
+            Your browser does not support the video tag.
+          </video> -->
+            <br />
+            <p>
+              Added throwable grenades that explode within a certain amount of
+              time.
+            </p>
+          </section>
+        </article>
+
+        <!--#LionTreePage-->
+        <article class="liontree" data-page="liontree">
+          <header>
+            <h2 class="h2 article-title">LionTree</h2>
+          </header>
+
+          <video class="project-img" playsinline autoplay loop muted>
+            <source
+              src="assets\\video\\LionTreeVideos\\Demo.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <!--About-->
+          <section class="about-text">
+            <p>
+              This project was developed during an internship with Collimation,
+              focusing on optimizing maps for WebGL, mobile, and VR platforms.
+              My responsibilities included designing mechanics, implementing UI
+              features, and creating interactive objects using Unity’s Visual
+              Scripting, enabling players to collect, interact with, and enjoy
+              them. The project utilized the Spatial plugin and was successfully
+              uploaded to the Spatial platform.
+            </p>
+
+            <!--Screenshots-->
+          </section>
+          <h3 class="h3 article-title">Screenshots</h3>
+          <figure class="project-img">
+            <img
+              src="assets\\images\\LionTreeImages\\Beach.png"
+              alt="Dragoncall"
+              loading="lazy"
+            />
+            <br />
+            <img
+              src="assets\\images\\LionTreeImages\\Fountain.png"
+              alt="Dragoncall"
+              loading="lazy"
+            />
+            <br />
+            <img
+              src="assets\\images\\LionTreeImages\\Mountain.png"
+              alt="Dragoncall"
+              loading="lazy"
+            />
+          </figure>
+
+          <section class="about-text"></section>
+        </article>
+
+        <!--#SOHM-->
+        <article class="sohm" data-page="sohm">
+          <header>
+            <h2 class="h2 article-title">Souls of the hexed Moon</h2>
+          </header>
+
+          <video class="project-img" playsinline autoplay loop muted>
+            <source src="assets\\video\\SOHMTrailer.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!--About-->
+          <section class="about-text">
+            <p>
+              "Soul of The Hexed Moon" is a game I developed during my
+              internship at MoonRift Entertainment, LLC. As part of a team of
+              six, I was responsible for implementing player and enemy
+              functionality, including movement, AI, animations, and sound
+              effects. The game was built using Unity and C#, with assets
+              created collaboratively by the team. Our project won the game jam,
+              recognized for being a complete, engaging, and well-functioning
+              game.
+            </p>
+          </section>
+        </article>
+
+        <!--#PECA-->
+        <article class="peca" data-page="peca">
+          <header>
+            <h2 class="h2 article-title">PECA</h2>
+          </header>
+
+          <figure class="project-img">
+            <img src="assets\\images\\PECA.png" alt="PECA" loading="lazy" />
+          </figure>
+
+          <!--About-->
+          <section class="about-text">
+            <p>
+              I was contracted by Pathways Early College Academy to design and
+              implement an interactive quiz feature using HTML, CSS, and
+              JavaScript. This feature dynamically generates personalized
+              results based on user responses and was seamlessly integrated into
+              their WordPress site for an enhanced user experience.
+            </p>
+
+            <br />
+            <br />
+            <a href="https://www.peca.org/quiz" class="links">
+              <u>Go to website.</u></a
+            >
+          </section>
+        </article>
+
+        <!--#MOODME-->
+        <article class="moodme" data-page="moodme">
+          <header>
+            <h2 class="h2 article-title">MoodMe</h2>
+          </header>
+
+          <video class="project-img" playsinline autoplay loop muted>
+            <source src="assets\\video\\MoodMeDemo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!--About-->
+          <section class="about-text">
+            <p>
+              This project was completed using Unity and C# when I was interning
+              at a company called MoodMe. I developed a game for the company
+              using their AI and emotion detection. I created a script that gets
+              the values for each emotion and allows the player to make the
+              emotion that is displayed. This took the entirety of the
+              internship, which was 3 months, to complete because I had to
+              develop and test out the demo to make sure to right emotions were
+              being displayed.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- js link-->
+    <script src="./assets/js/script.js"><\/script>
+
+    <!-- ionicon link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ><\/script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ><\/script>
+  </body>
+</html>
+`,h="<!--#PORTFOLIO-->",v="<!--#RESUME-->",p=d.indexOf(h),u=d.indexOf(v,p);if(p===-1||u===-1)throw new Error("Could not extract the portfolio section from the source HTML.");const b=d.slice(p,u).replaceAll('src="./assets/images/','src="/__mockup/portfolio-assets/');function f(t,i){const l=i.trim().toLowerCase();t.querySelectorAll("[data-filter-item]").forEach(e=>{const n=e.dataset.category;e.classList.toggle("active",l==="all"||l===n)})}function x(){const[t,i]=g.useState(null);g.useEffect(()=>{if(!t)return;const e=n=>{n.key==="Escape"&&i(null)};return window.addEventListener("keydown",e),()=>window.removeEventListener("keydown",e)},[t]);function l(e){if(!(e.target instanceof Element))return;const n=e.target.closest("button");if(!n)return;const r=e.currentTarget;if(n.matches("[data-select]")){n.classList.toggle("active");return}if(n.matches("[data-select-item], [data-filter-btn]")){const c=n.textContent?.trim()??"All";f(r,c);const s=r.querySelector("[data-selecct-value]");s&&(s.textContent=c),r.querySelector("[data-select]")?.classList.remove("active"),r.querySelectorAll("[data-filter-btn]").forEach(o=>{o.classList.toggle("active",o===n)});return}if(n.matches("[data-project-btn]")){const c=n.closest("[data-filter-item]"),s=n.querySelector("img"),o=n.querySelector(".project-title")?.textContent?.trim(),m=c?.querySelector(".project-category")?.textContent?.trim();o&&s&&m&&i({title:o,category:m,image:s.src,alt:s.alt})}}return a.jsxs("div",{className:"portfolio-current",onClick:l,style:{minHeight:"100vh"},children:[a.jsx("div",{className:"portfolio-current__source",dangerouslySetInnerHTML:{__html:b}}),t&&a.jsx("div",{className:"portfolio-current__preview-backdrop",role:"presentation",onClick:()=>i(null),children:a.jsxs("section",{className:"portfolio-current__preview",role:"dialog","aria-modal":"true","aria-label":`${t.title} project preview`,onClick:e=>e.stopPropagation(),children:[a.jsx("button",{className:"portfolio-current__preview-close",type:"button","aria-label":"Close project preview",onClick:()=>i(null),children:"×"}),a.jsx("img",{src:t.image,alt:t.alt}),a.jsx("h2",{children:t.title}),a.jsx("p",{children:t.category})]})}),a.jsx("style",{children:`
+        .portfolio-current {
+          min-height: 100vh;
+          padding: 15px;
+          background: var(--background-color);
+          color: var(--text-color);
+        }
+        .portfolio-current .portfolio {
+          display: block;
+          margin-inline: auto;
+        }
+        .portfolio-current__preview-backdrop {
+          position: fixed;
+          z-index: 100;
+          inset: 0;
+          display: grid;
+          place-items: center;
+          padding: 20px;
+          background: rgba(2, 6, 23, .84);
+        }
+        .portfolio-current__preview {
+          position: relative;
+          width: min(100%, 720px);
+          padding: 20px;
+          border: 1px solid #334155;
+          border-radius: 20px;
+          background: var(--card-color);
+          box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
+        }
+        .portfolio-current__preview > img {
+          width: 100%;
+          max-height: 62vh;
+          border-radius: 14px;
+          object-fit: contain;
+          background: var(--background-color);
+        }
+        .portfolio-current__preview h2 { margin: 16px 0 4px; }
+        .portfolio-current__preview p { margin: 0; color: var(--muted-color); }
+        .portfolio-current__preview-close {
+          position: absolute;
+          z-index: 1;
+          top: 28px;
+          right: 28px;
+          width: 38px;
+          height: 38px;
+          border: 0;
+          border-radius: 50%;
+          background: var(--background-color);
+          color: var(--text-color);
+          font-size: 25px;
+          cursor: pointer;
+        }
+        @media (min-width: 580px) {
+          .portfolio-current { padding: 30px; }
+        }
+      `})]})}export{x as Current};

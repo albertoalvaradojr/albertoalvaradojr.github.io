@@ -1,0 +1,1 @@
+- [Mockup sandbox setup](mockup-sandbox-setup.md) — verify artifact-local dependencies before restarting; preview workflows may launch before Vite is installed.
