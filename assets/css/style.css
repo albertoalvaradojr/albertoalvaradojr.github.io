@@ -962,7 +962,10 @@ main {
   margin-bottom: 10px;
 }
 
-.project-item { display: none; }
+.project-item {
+  display: none;
+  min-width: 0;
+}
 
 .project-item.active {
   display: block;
@@ -974,7 +977,11 @@ main {
   100% { transform: scale(1); }
 }
 
-.project-item > a { width: 100%; }
+.project-item > a,
+.project-item > button {
+  display: block;
+  width: 100%;
+}
 
 .project-img {
   position: relative;
