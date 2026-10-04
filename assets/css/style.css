@@ -1945,3 +1945,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   width: 100%;
   margin: 0 auto;
 }
+
+@media (max-width: 579px) {
+  .sidebar-info_more .contacts-list {
+    gap: 10px;
+  }
+
+  .sidebar-info_more > .separator:last-of-type {
+    margin: 8px 0 0;
+  }
+}
