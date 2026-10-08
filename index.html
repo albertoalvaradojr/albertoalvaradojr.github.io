@@ -152,7 +152,7 @@
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
+              <button class="navbar-link" data-nav-link>Job</button>
             </li>
           </ul>
         </nav>
@@ -634,52 +634,54 @@
           </section>
         </article>
 
-        <!--#CONTACT-->
-        <article class="contact" data-page="contact">
+        <!--#Job Assist-->
+        <article class="job" data-page="job">
           <header>
-            <h2 class="h2 article-title">Contact</h2>
+            <h2 class="h2 article-title">Job Assist</h2>
           </header>
 
           <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
+            <h3 class="h3 form-title">Role Replay</h3>
+            <p class="job-assist-help">
+              Paste the job description and your resume below. Your text stays
+              in this browser; the estimate compares detected skills and
+              keywords and is not an ATS result or a hiring prediction.
+            </p>
 
-            <form action="mailto:aajrgs@gmail.com" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
+            <form class="form" data-form>
+              <textarea
+                name="job-description"
+                class="form-input"
+                id="job-description"
+                placeholder="Paste the job description"
+                required
+                data-form-input
+              ></textarea>
 
               <textarea
-                name="message"
+                name="resume"
                 class="form-input"
-                placeholder="Your Message"
+                id="resume"
+                placeholder="Paste your resume"
                 required
                 data-form-input
               ></textarea>
 
               <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
+                <ion-icon name="analytics-outline"></ion-icon>
+                <span>Check Match</span>
               </button>
 
-              <p class="form-status" data-form-status aria-live="polite"></p>
+              <div
+                class="form-status active job-match-result"
+                id="job-match-result"
+                aria-live="polite"
+              >
+                Add both texts above to see your match estimate.
+              </div>
             </form>
           </section>
+
         </article>
 
         <!--#ScensionPage-->

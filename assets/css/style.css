@@ -1261,6 +1261,58 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-status.active { display: block; }
 
+.job-assist-help {
+  margin-bottom: 18px;
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  line-height: 1.6;
+}
+
+.job-match-result {
+  padding: 16px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+}
+
+.job-match-score {
+  margin-bottom: 8px;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-2);
+}
+
+.job-match-result > p,
+.job-match-section > p {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  line-height: 1.6;
+}
+
+.job-match-section {
+  margin-top: 18px;
+}
+
+.job-match-section h4 {
+  margin-bottom: 8px;
+  color: var(--white-2);
+  font-size: var(--fs-6);
+}
+
+.job-match-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.job-match-terms li {
+  padding: 6px 10px;
+  border: 1px solid var(--jet);
+  border-radius: 999px;
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+}
+
 
 
 
