@@ -71,63 +71,50 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 
 }
-// add event in all project buttons
-let lastClickedBtn2 = projectBtns[0];
-
-for (let i = 0; i < projectBtns.length; i++) {
-
-  projectBtns[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-
-    pages.forEach(element =>{
-      if (selectedValue === element.dataset.page) {
-        element.classList.add("active");
-        window.scrollTo(0, 0);
-      } 
-      else if(element.classList.contains("active")){
-        element.classList.remove("active");
-      }
-    });
-
-    navigationLinks.forEach(element => {
-      if(element != null && element.classList.contains("active")){
-        element.classList.remove("active");
-      }
-    });
-   
-
-    lastClickedBtn2 = this;
-
-  });
-
-}
-
-
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+const activatePage = function (pageName) {
+  const targetPage = Array.from(pages).find(
+    (page) => page.dataset.page === pageName
+  );
 
-    //Could optimize, activates page/highlightsNav based on where it is on the index
-    //Check if names match, then change
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        if(navigationLinks[i] != null){
-          navigationLinks[i].classList.remove("active");
-        }
-      }
+  if (!targetPage) return;
+
+  pages.forEach((page) => {
+    if (page === targetPage) {
+      page.classList.add("active");
+    } else {
+      page.classList.remove("active");
     }
   });
-}
+
+  navigationLinks.forEach((link) => {
+    if (link.textContent.trim().toLowerCase() === pageName) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+
+  window.scrollTo(0, 0);
+};
+
+navigationLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    activatePage(link.textContent.trim().toLowerCase());
+  });
+});
+
+projectBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    const projectTitle = button.querySelector(".project-title");
+    if (projectTitle) {
+      activatePage(projectTitle.textContent.trim().toLowerCase());
+    }
+  });
+});
 
 /*
 VIDEO STUFF
