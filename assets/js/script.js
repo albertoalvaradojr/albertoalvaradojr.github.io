@@ -255,11 +255,8 @@ const analyzeJobMatch = function (jobDescription, resume) {
   const missingSkills = skills.filter((skill) => !matchedSkills.includes(skill));
   const matchedKeywords = [...keywords].filter((word) => containsTerm(resumeText, word));
   const missingKeywords = [...keywords].filter((word) => !containsTerm(resumeText, word));
-  const totalWeight = (skills.length * 2) + keywords.size;
-  const matchedWeight = (matchedSkills.length * 2) + matchedKeywords.length;
 
   return {
-    score: totalWeight ? Math.round((matchedWeight / totalWeight) * 100) : null,
     matchedSkills: matchedSkills.map((skill) => skill.name),
     missingSkills: missingSkills.map((skill) => skill.name),
     matchedKeywords,
@@ -308,35 +305,34 @@ const updateJobMatch = function () {
   matchResult.replaceChildren();
 
   if (!jobDescription || !resume) {
-    matchResult.textContent = "Your match result will appear here.";
+    matchResult.textContent = "Add both texts above to see a local wording checklist.";
     return;
   }
 
   const result = analyzeJobMatch(jobDescription, resume);
 
-  if (result.score === null) {
+  if (
+    !result.matchedSkills.length &&
+    !result.missingSkills.length &&
+    !result.matchedKeywords.length &&
+    !result.missingKeywords.length
+  ) {
     matchResult.textContent =
-      "I couldn't identify clear skills or keywords in the job description. Try including the role requirements and responsibilities.";
+      "I couldn't identify recognized skills or useful keywords in the job description. Try including the role requirements and responsibilities.";
     return;
-  }
-
-  let rating = "Limited alignment";
-  if (result.score >= 80) {
-    rating = "Strong alignment";
-  } else if (result.score >= 65) {
-    rating = "Good alignment";
-  } else if (result.score >= 45) {
-    rating = "Some alignment";
   }
 
   const summary = document.createElement("h3");
   summary.className = "job-match-score";
-  summary.textContent = `${result.score}% — ${rating}`;
+  const totalSkills = result.matchedSkills.length + result.missingSkills.length;
+  summary.textContent = totalSkills
+    ? `${result.matchedSkills.length} of ${totalSkills} recognized skills detected`
+    : "No recognized skills detected; see the job-description terms below.";
   matchResult.appendChild(summary);
 
   const note = document.createElement("p");
   note.textContent =
-    "Text-overlap estimate: detected skills count twice as much as individual keywords. It does not interpret context or synonyms beyond its listed terms, and is not an ATS result or a hiring prediction.";
+    "Browser-only wording check. It does not understand context, recognize every synonym, or predict how an ATS or employer will evaluate an application. Review the results and only add skills that accurately describe your experience.";
   matchResult.appendChild(note);
 
   appendTermList(

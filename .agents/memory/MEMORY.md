@@ -1,0 +1,1 @@
+- [Browser-only resume review](browser-only-resume-review.md) — keep pasted job and resume text on-device; no external analysis service without a new user decision.
