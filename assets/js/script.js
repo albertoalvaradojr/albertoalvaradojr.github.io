@@ -131,12 +131,12 @@ const jobSkillAliases = [
   { name: "React Native", terms: ["react native"] },
   { name: "Angular", terms: ["angular"] },
   { name: "Vue", terms: ["vue", "vue js"] },
-  { name: "Node.js", terms: ["node js", "node"] },
+  { name: "Node.js", terms: ["node js", "nodejs"] },
   { name: "Python", terms: ["python"] },
   { name: "Java", terms: ["java"] },
   { name: "C#", terms: ["c sharp", "csharp"] },
   { name: "C++", terms: ["c plus plus", "cplusplus"] },
-  { name: ".NET", terms: ["dotnet", "net", "net framework", "net core"] },
+  { name: ".NET", terms: ["dotnet", "net framework", "net core"] },
   { name: "SQL", terms: ["sql"] },
   { name: "NoSQL", terms: ["nosql", "no sql"] },
   { name: "Unity", terms: ["unity"] },
@@ -162,7 +162,7 @@ const jobSkillAliases = [
   { name: "Testing", terms: ["testing", "test automation"] },
   { name: "Unit Testing", terms: ["unit testing", "unit tests"] },
   { name: "Debugging", terms: ["debugging", "debug"] },
-  { name: "Performance Optimization", terms: ["performance optimization", "optimization"] },
+  { name: "Performance Optimization", terms: ["performance optimization", "performance tuning"] },
   { name: "Game Development", terms: ["game development", "gameplay programming"] },
   { name: "Artificial Intelligence", terms: ["artificial intelligence", "machine learning", "ai"] },
   { name: "Virtual Reality", terms: ["virtual reality", "vr"] },
@@ -171,8 +171,8 @@ const jobSkillAliases = [
   { name: "Communication", terms: ["communication", "communicate"] },
   { name: "Collaboration", terms: ["collaboration", "collaborative"] },
   { name: "Teamwork", terms: ["teamwork", "team work"] },
-  { name: "Problem Solving", terms: ["problem solving", "problem solving"] },
-  { name: "Leadership", terms: ["leadership", "lead"] },
+  { name: "Problem Solving", terms: ["problem solving"] },
+  { name: "Leadership", terms: ["leadership", "team lead", "team leader", "technical lead", "technical leader", "led teams", "led a team"] },
   { name: "Project Management", terms: ["project management"] },
   { name: "Customer Service", terms: ["customer service", "customer support"] },
   { name: "Data Analysis", terms: ["data analysis", "data analytics"] },
@@ -197,7 +197,8 @@ const stopWords = new Set([
   "via", "one", "two", "three", "workplace", "company", "position",
   "required", "requirements", "requirement", "preferred", "minimum", "ideal",
   "join", "looking", "seeking", "qualified", "qualifications", "qualification",
-  "candidates"
+  "candidates", "developer", "developers", "engineer", "engineers", "engineering",
+  "net"
 ]);
 
 const containsTerm = function (text, term) {
@@ -205,9 +206,21 @@ const containsTerm = function (text, term) {
 };
 
 const getJobRequirements = function (jobText) {
-  const skills = jobSkillAliases.filter((skill) =>
-    skill.terms.some((term) => containsTerm(jobText, normalizeText(term)))
-  );
+  const hasReactNative = containsTerm(jobText, "react native");
+  const hasUnitTesting = containsTerm(jobText, "unit testing");
+  const javascriptSearchText = jobText
+    .replace(/\bnode\s+js\b/g, "node")
+    .replace(/\bnodejs\b/g, "node");
+  const skills = jobSkillAliases.filter((skill) => {
+    if (skill.name === "React" && hasReactNative) return false;
+    if (skill.name === "Testing" && hasUnitTesting) return false;
+
+    const searchText =
+      skill.name === "JavaScript" ? javascriptSearchText : jobText;
+    return skill.terms.some((term) =>
+      containsTerm(searchText, normalizeText(term))
+    );
+  });
   const skillWords = new Set();
 
   skills.forEach((skill) => {
@@ -323,7 +336,7 @@ const updateJobMatch = function () {
 
   const note = document.createElement("p");
   note.textContent =
-    "Estimate based on skills and keywords found in the job description and resume. It is not an ATS result or a hiring prediction.";
+    "Text-overlap estimate: detected skills count twice as much as individual keywords. It does not interpret context or synonyms beyond its listed terms, and is not an ATS result or a hiring prediction.";
   matchResult.appendChild(note);
 
   appendTermList(
@@ -343,6 +356,12 @@ const updateJobMatch = function () {
     "Other matching keywords",
     result.matchedKeywords,
     "No other matching keywords were detected."
+  );
+  appendTermList(
+    matchResult,
+    "Job-description keywords not found in the resume",
+    result.missingKeywords,
+    "All detected keywords were found."
   );
 };
 
