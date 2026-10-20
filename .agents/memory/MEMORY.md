@@ -1,1 +1,1 @@
-- [Browser-only resume review](browser-only-resume-review.md) — keep pasted job and resume text on-device; no external analysis service without a new user decision.
+- [Resume-review privacy](browser-only-resume-review.md) — if the removed checker is restored, keep pasted job and resume text on-device unless the user explicitly changes that choice.

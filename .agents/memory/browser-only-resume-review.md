@@ -1,10 +1,10 @@
 ---
-name: Browser-only resume review
-description: The user's privacy and service boundary for the resume checker.
+name: Resume-review privacy
+description: Privacy boundary to preserve if the removed resume checker is restored.
 ---
 
-The resume checker must run entirely in the browser and must not send pasted job descriptions or resume text to an external analysis service.
+The resume checker was removed at the user's request. If the user later asks to restore it, keep the feature browser-only and do not send pasted job descriptions or resume text to an external service unless they explicitly change that choice.
 
 **Why:** the user chose a browser-only checker instead of connecting an AI provider.
 
-**How to apply:** keep future resume-checker changes local-only unless the user explicitly changes this decision.
+**How to apply:** apply this privacy boundary to any future request to restore or replace resume-review functionality.
